@@ -303,7 +303,7 @@ export async function members_MemberCreated({ store, event }: EventContext & Sto
   const validator = new Validator({
     id: member.id,
     isVerified: false,
-    validatorAccount: member.metadata.validatorAccount,
+    // validatorAccount: member.metadata.validatorAccount,
     member: member,
     memberMetadata: member.metadata,
   })
