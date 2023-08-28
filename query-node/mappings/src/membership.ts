@@ -344,7 +344,7 @@ export async function members_MemberProfileUpdated({ store, event }: EventContex
   const validator = new Validator({
     id: member.id,
     isVerified: false,
-    validatorAccount: metadata.validatorAccount,
+    // validatorAccount: metadata.validatorAccount,
     member: member,
     memberMetadata: member.metadata,
   })
