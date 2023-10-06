@@ -19,7 +19,6 @@ type MemberCreationParams = {
   externalResources?: MembershipMetadata.IExternalResource[] | null
   metadata: Bytes
   is_founding_member: boolean
-  validatorAccount?: string
 }
 
 // Common code for Membership fixtures
@@ -40,7 +39,6 @@ export function generateParamsFromAccountId(accountId: string, isFoundingMember 
     about,
     avatarUri,
     externalResources,
-    validatorAccount,
   })
 
   return {
@@ -51,7 +49,6 @@ export function generateParamsFromAccountId(accountId: string, isFoundingMember 
     about,
     avatarUri,
     externalResources,
-    validatorAccount,
     metadata: metadataBytes,
     is_founding_member: isFoundingMember,
   }
